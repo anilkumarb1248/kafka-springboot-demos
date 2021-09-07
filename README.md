@@ -12,14 +12,17 @@ zookeeper-server-start.bat config\zookeeper.properties
 
 # Creating the required topics
 kafka-topics --zookeeper localhost:2181 --create --topic employee-data --partitions 2 --replication-factor 1
+
 kafka-topics --zookeeper localhost:2181 --create --topic string-messages --partitions 2 --replication-factor 1
 
 # Staring Producers from the console
 kafka-console-producer.bat --broker-list localhost:9092 --topic employee-data
+
 kafka-console-producer.bat --broker-list localhost:9092 --topic string-messages
 
 # Staring Consumers from the console
 kafka-console-producer.bat --broker-list localhost:9092 --topic string-messages
+
 kafka-console-producer.bat --broker-list localhost:9092 --topic employee-data
 
 # Testing
