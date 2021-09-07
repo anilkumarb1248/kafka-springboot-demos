@@ -7,7 +7,7 @@ https://www.javatpoint.com/installation-of-apache-kafka
 # Start the ZooKeeper
 zookeeper-server-start.bat config\zookeeper.properties
 
-#Start the Kafka Server
+# Start the Kafka Server
 zookeeper-server-start.bat config\zookeeper.properties
 
 # Creating the required topics
@@ -22,6 +22,6 @@ kafka-console-producer.bat --broker-list localhost:9092 --topic string-messages
 kafka-console-producer.bat --broker-list localhost:9092 --topic string-messages
 kafka-console-producer.bat --broker-list localhost:9092 --topic employee-data
 
-#Testing
+# Testing
 Run the Producer and Consumer applications and hit the below URL from the browser
 http://localhost:2021/KafkaProducer/producer/send/TestUser
